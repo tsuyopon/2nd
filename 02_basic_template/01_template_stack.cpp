@@ -2,6 +2,8 @@
 // Akira Takahashi, Fumiki Fukuda.
 // Released under the CC0 1.0 Universal license.
 
+// クラス用テンプレートの最も簡単な例
+
 template <class T>
 class Stack {
   T*  data_;

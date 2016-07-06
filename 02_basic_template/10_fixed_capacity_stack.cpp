@@ -2,6 +2,7 @@
 // Akira Takahashi, Fumiki Fukuda.
 // Released under the CC0 1.0 Universal license.
 
+// XXX 数値の省略
 template <class T, int N = 10>
 class Stack {
   T   data_[N];

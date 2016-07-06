@@ -9,6 +9,7 @@ class Foo {
 public:
   Foo(int v) : value_(v) {}
 
+  // メンバー変数テンプレート
   template <class T>
   void get(T& dst) const
   {

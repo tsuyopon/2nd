@@ -28,6 +28,7 @@ public:
 
 #include <memory>
 
+// XXX: usingを使ってエイリアス宣言している
 template <class T>
 using MyAllocator = std::allocator<T>;
 

@@ -38,6 +38,7 @@ void Stack<T>::push(T x)
   if (index_ < capacity_) data_[index_++] = x;
 }
 
+// XXX  クラスとメンバーのテンプレートを記述する場合には、templateを２つ続けて記述する
 template <class T>
 template <class U>
 void Stack<T>::top(U& dst) const

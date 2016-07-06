@@ -44,4 +44,5 @@ int Stack<T>::size() const
   return index_;
 }
 
+// XXX: 
 template class Stack<int>;

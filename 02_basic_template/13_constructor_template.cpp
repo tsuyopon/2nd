@@ -25,5 +25,5 @@ public:
 int main()
 {
   Point<int>  ip(12, 34);
-  Point<long> lp(ip);
+  Point<long> lp(ip);       // この行がある場合、Point<int>からPoint<long>への暗黙的キャストを行うのでコンストラクタテンプレートの行を追加しないとエラーになる
 }

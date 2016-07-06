@@ -5,7 +5,7 @@
 #include <iostream>
 	
 template <class T, int N>
-int size(T (&ar)[N])
+int size(T (&ar)[N])       // (&ar)で配列のアドレスを取得して、(&ar)[N]でその配列を表している
 {
   return N;
 }

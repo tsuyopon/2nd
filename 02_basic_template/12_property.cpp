@@ -8,6 +8,11 @@ http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2004/n1615.pdf
 より抜粋
 */
 
+// Note: Object::*real_getterは何を意味するのか?
+//  「::*」はメンバー関数へのポインタを意味する。
+//  その値を取得するときには「Object->*real_getter」と「->*」記法を使う
+//  (参考) http://stackoverflow.com/questions/30767243/what-does-mean-in-c
+
 template <class T, class Object,       // プロパティの型、オーナーの型
           T (Object::*real_getter)()const,    // get 関数
           T (Object::*real_setter)(const T&)> // set 関数

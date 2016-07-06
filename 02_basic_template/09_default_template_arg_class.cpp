@@ -5,6 +5,7 @@
 #include <iostream>
 #include <iomanip>
 
+// XXX 型のデフォルトテンプレート
 template <class X = double, class Y = char, class Z = Y>
 struct xyz {
   X x;

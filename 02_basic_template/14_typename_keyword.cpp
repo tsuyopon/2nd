@@ -18,6 +18,8 @@ int p;
 template <class T>
 void g(T arg)
 {
+  // XXX typenameを付与することでT::resultを型として扱うことを宣言
+  // これを付加する理由:  Y::resultだと定数5になってしまうのでテンプレートが意図した動作にならない
   typename T::result* p;
 //……
 }

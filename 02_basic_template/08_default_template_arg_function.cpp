@@ -5,11 +5,13 @@
 #include <iostream>
 #include <iomanip>
 
+// XXX 引数テンプレート。型にあった値を返却してくれる仕組み
 template <class T = double> // 省略時はdoubleとみなす
 T pi() { return T(3.1415926536); }
 
 int main()
 {
+  // XXX <xxx>に記述すると明示した型の値を取得する。
   float  x = pi<float>(); // 型の明示
   double y = pi<>();      // 省略時 : pi<double>()
   double z = pi();        // 同上
